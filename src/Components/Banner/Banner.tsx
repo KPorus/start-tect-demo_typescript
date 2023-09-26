@@ -6,9 +6,7 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import Image from "next/image";
 import dynamic from "next/dynamic";
 const BannerAds = dynamic(() => import("./BannerAds"));
-import imgUrls from "@/assets/BannerImage/BannerImage";
-
-
+const imgUrls = require('@/assets/BannerImage/BannerImage');
 
 const Banner = () => {
   return (
@@ -41,7 +39,7 @@ const Banner = () => {
             navigation={true}
             modules={[Autoplay, Pagination, Navigation]}
             className='mySwiper'>
-            {imgUrls.map((imageUrl, index) => (
+            {imgUrls.map((imageUrl:string, index:string) => (
               <SwiperSlide key={index}>
                 <div className='sub-banner-img-container'>
                   <Image

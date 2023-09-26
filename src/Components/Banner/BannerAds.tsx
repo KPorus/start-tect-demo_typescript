@@ -9,7 +9,6 @@ const BannerAds = () => {
               height={500}
               src='https://i.ibb.co/Mn2xFcf/mobilepoint-gadget.jpg'
               alt=''
-              srcSet=''
             />
           </div>
         </div>
@@ -20,7 +19,7 @@ const BannerAds = () => {
               height={500}
               src='https://i.ibb.co/KFb0dhJ/gadget-2.jpg'
               alt=''
-              srcSet=''
+              
             />
           </div>
         </div>
@@ -32,7 +31,7 @@ const BannerAds = () => {
               className='h-[100%]'
               src='https://i.ibb.co/MPkYtpF/delivery.jpg'
               alt=''
-              srcSet=''
+              
             />
           </div>
         </div>
