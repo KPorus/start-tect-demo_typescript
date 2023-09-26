@@ -6,7 +6,6 @@ const AiOutlineSearch = dynamic(() => import('react-icons/ai').then((module) => 
 const MdOutlineElectricBolt = dynamic(() => import('react-icons/md').then((module) => module.MdOutlineElectricBolt))
 const MdOutlineManageAccounts = dynamic(() => import('react-icons/md').then((module) => module.MdOutlineManageAccounts))
 import Image from "next/image";
-import CustomLogo from "@/Helpers/customLogo";
 
 const Navber = () =>
 {
@@ -18,21 +17,17 @@ const Navber = () =>
                         href={"/"}
                         aria-label='Start tech'
                         className='mx-4 py-5  md:block'>
-                        {/* <div as='logo'>
-                            <Image
-                                src='https://seeklogo.com/images/S/startech-logo-0BF29AE753-seeklogo.com.png'
-                                sizes='100vw'
-                                width={117}
-                                height={92}
-                                style={{
-                                    width: "6rem",
-                                    height: "100%",
-                                }}
-                                alt='Logo'
-                                priority={false}
-                            />
-                        </div> */}
-                        <CustomLogo></CustomLogo>
+                        <Image
+                            src='https://seeklogo.com/images/S/startech-logo-0BF29AE753-seeklogo.com.png'
+                            alt='Logo'
+                            width={117}
+                            height={92}
+                            style={{
+                                width: "6rem",
+                                height: "100%",
+                            }}
+                            priority={true}
+                        />
                     </Link>
 
                     <div className='xl:block hidden  h-[42px] flex-1 rounded-sm ml-5 relative '>
