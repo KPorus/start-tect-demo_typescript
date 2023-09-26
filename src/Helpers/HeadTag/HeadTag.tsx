@@ -1,9 +1,9 @@
-import { iHeadProps } from "@/Interface/Head/HeadInterface";
+import { IHeadProps } from "@/Interface/Head/HeadInterface";
 import Head from "next/head";
 
 
 
-const HeadTag = ({ title, descriptionContent }: iHeadProps) => {
+const HeadTag = ({ title, descriptionContent }: IHeadProps) => {
     return (
         <>
             <Head>

@@ -1,4 +1,4 @@
-export interface iHeadProps
+export interface IHeadProps
 {
     title: string;
     descriptionContent: string;
