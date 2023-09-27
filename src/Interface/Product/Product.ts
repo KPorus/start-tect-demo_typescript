@@ -1,12 +1,12 @@
-export type IProductData ={
-    _id:string,
+export type IProductData = {
+    _id: string,
     images: Iimage[],
-    category:string,
-    price:string,
-    title:string,
-    rating:string,
-    brand:string,
-    description:string,
+    category: string,
+    price: string,
+    title: string,
+    rating: string,
+    brand: string,
+    description: string,
 }
 
 type Iimage = {
@@ -14,17 +14,15 @@ type Iimage = {
     _id: string
 }
 
-type IMeta={
-    page:number,
-    count:number,
-    limit:number,
+type IMeta = {
+    page: number,
+    count: number,
+    limit: number,
 }
-
 export type IData = {
-    meta:IMeta,
-    data:IProductData[];
+    meta: IMeta,
+    data: IProductData[];
 }
-export interface IProps
-{
+export interface IProps {
     posts: IData
 }
