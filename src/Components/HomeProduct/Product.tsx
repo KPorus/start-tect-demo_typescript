@@ -1,13 +1,10 @@
 import { IProductData, IProps } from "@/Interface/Product/Product";
 import dynamic from "next/dynamic";
 import Link from "next/link";
-import { useState } from "react";
 const Card = dynamic(() => import("@/sheared/Card/ProductCard"));
 const View = dynamic(() => import("@/sheared/Button/View"));
 
 const Product = ({ posts }: IProps) => {
-  
-
   const data = posts.data;
   return (
     <div id="productComponent" className="container mx-auto">
@@ -21,7 +18,6 @@ const Product = ({ posts }: IProps) => {
               key={index}
               className="w-full sm:w-1/2 md:w-1/2 lg:w-[40%] xl:w-[24%] transform transition-transform ease-out hover:scale-105"
             >
-              {/* <Card post={post} /> */}
               <Card post={post} />
             </div>
           ))}

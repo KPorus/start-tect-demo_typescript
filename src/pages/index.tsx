@@ -4,7 +4,7 @@ import HeadTag from '@/Helpers/HeadTag/HeadTag';
 const RootLayouts = dynamic(() => import("@/Components/Layouts/RootLayouts"));
 const Banner = dynamic(() => import("@/Components/Banner/Banner"));
 const Product = dynamic(() => import("@/Components/HomeProduct/Product"));
-// const Review = dynamic(() => import("@/components/HomeReviews/Review"));
+const Review = dynamic(() => import("@/Components/HomeReviews/Review"));
 import { loadProduct } from "@/utils/Home/LoadProduct";
 import { IProps } from '@/Interface/Product/Product';
 
@@ -19,9 +19,9 @@ export default function Home({ posts }: IProps)
       <div className='mb-12'>
         <Product posts={posts}></Product>
       </div>
-      {/* <div className='mb-12'>
+      <div className='mb-12'>
         <Review />
-      </div> */}
+      </div>
       <h1 className='text-center text-2xl p-5'>This is my home Page</h1>
     </div>
   )

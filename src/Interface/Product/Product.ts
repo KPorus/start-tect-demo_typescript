@@ -9,7 +9,7 @@ export type IProductData = {
     description: string,
 }
 
-type Iimage = {
+export type Iimage = {
     url: string,
     _id: string
 }

@@ -3,7 +3,7 @@ import dynamic from "next/dynamic";
 import { PaginationProps } from "@/Interface/Pagination";
 const View = dynamic(() => import("../../sheared/Button/View"));
 
-const Pagination: React.FC<PaginationProps> = ({ currentPage, totalPages }) => {
+const Pagination = ({ currentPage, totalPages }: PaginationProps) => {
   const pageNumbers = [];
 
   for (let i = 1; i <= totalPages; i++) {

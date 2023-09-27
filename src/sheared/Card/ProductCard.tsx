@@ -16,7 +16,7 @@ const View = dynamic(() => import("../Button/View"));
 
 const Card = ({ post }: { post: IProductData }) => {
   return (
-    <div className="w-full bg-white border border-gray-200 rounded-lg shadow ">
+    <div className="w-full bg-white border border-gray-200 rounded-lg shadow h-[100%]">
       <div className="">
         <Image
           src={post.images[0].url}
