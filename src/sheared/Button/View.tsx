@@ -1,7 +1,7 @@
 import { ButtonProps } from '@/Interface/Button/ButtonProps';
 import React from 'react';
 
-const View: React.FC<ButtonProps> = ({ button }) =>
+const View = ({ button }: ButtonProps) =>
 {
   return (
     <button

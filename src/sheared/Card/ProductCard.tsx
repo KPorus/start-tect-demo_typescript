@@ -14,7 +14,7 @@ const BsFillCartCheckFill = dynamic(() =>
 const Button = dynamic(() => import("../Button/Button"));
 const View = dynamic(() => import("../Button/View"));
 
-const Product: React.FC<IProductData> = ({ post } ) => {
+const Product = ({ post }: IProductData) => {
   return (
     <div className='w-full bg-white border border-gray-200 rounded-lg shadow '>
       <div className=''>

@@ -4,7 +4,7 @@ import Link from "next/link";
 const Card = dynamic(() => import("@/sheared/Card/ProductCard"));
 const View = dynamic(() => import("@/sheared/Button/View"));
 
-const Product: React.FC<IProps> = ({ posts }) => {
+const Product = ({ posts }: IProps) => {
   const data = posts.data;
   return (
     <div id="productComponent" className='container mx-auto'>
