@@ -1,4 +1,4 @@
-export type IProductata ={
+export type IProductData ={
     _id:string,
     images: Iimage[],
     category:string,
@@ -14,8 +14,17 @@ type Iimage = {
     _id: string
 }
 
-export type IMeta={
+type IMeta={
     page:number,
     count:number,
     limit:number,
+}
+
+export type IData = {
+    meta:IMeta,
+    data:IProductData[];
+}
+export interface IProps
+{
+    posts: IData
 }
