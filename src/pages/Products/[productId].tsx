@@ -134,6 +134,7 @@ export async function getServerSideProps(query:any) {
     `https://assignment-3-8p6flgq4f-mr7aali.vercel.app/api/v1/product/${params.productId}`
   );
   const data = await res.json();
+  console.log(data);
   const post:IProductData= data.data;
   return { props: { post } };
 }
