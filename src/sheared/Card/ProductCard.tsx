@@ -16,19 +16,20 @@ const View = dynamic(() => import("../Button/View"));
 
 const Card = ({ post }: { post: IProductData }) => {
   return (
-    <div className="w-full bg-white border border-gray-200 rounded-lg shadow h-[100%]">
+    <div  className="w-full bg-white border border-gray-200 rounded-lg shadow h-[100%]">
       <div className="">
         <Image
           src={post.images[0].url}
           alt="product image"
-          width={600}
+         width={400}
           height={400}
+        //  fill
           priority={true}
           style={{
-            objectFit: "cover", // or "contain" depending on your layout needs
+           objectFit: "cover", // or "contain" depending on your layout needs
             objectPosition: "center center", // adjust as needed
           }}
-          sizes="100vw"
+         sizes="100vw"
           className="p-8 rounded-t-lg"
         />
       </div>
@@ -52,6 +53,7 @@ const Card = ({ post }: { post: IProductData }) => {
         </div>
         <div className="text-center my-3">
           <Link
+          
             href={`/Products/${post._id}`}
             aria-label="view product details"
           >
